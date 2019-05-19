@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../src/App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  let width = 0;\n  function handleClick() {\n    width += 1;\n  }\n</script>\n\n<style>\n  div {\n    background-color: red;\n  }\n</style>\n\n<button on:click=\"{handleClick}\">\n  Clicked {width} {width === 1 ? 'time' : 'times'}\n</button>\n<input type=\"number\" bind:value=\"{width}\" />\n\n<div bind:offsetWidth=\"{width}\" bind:offsetHeight=\"{width}\"></div>\n"
+  ],
+  "names": [],
+  "mappings": "AAQE,GAAG,eAAC,CAAC,AACH,gBAAgB,CAAE,GAAG,AACvB,CAAC"
+}
